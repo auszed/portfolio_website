@@ -1,0 +1,250 @@
+// importing fonts
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;500;700;900&family=Open+Sans:wght@300;400;600;800&family=Yellowtail&display=swap');
+
+// variables
+$text_intro : white;
+
+.logo_icono{
+    max-width:  3em;
+}
+
+
+  #bgVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+
+    // object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+
+}
+
+
+#wrapper_main_text{
+    position: relative;
+    z-index: 6;
+    text-align: center;
+    color: $text_intro;   
+}
+
+.margin_cover{
+    margin-top: 40vh;
+}
+
+// copy text from the start
+.copy_text{
+    color: $text_intro;
+    font-family: 'Heebo', sans-serif, 'Yellowtail';
+    font-weight: 300;
+    strong{
+        font-weight: 700;
+    }
+}
+
+
+
+// changing the font from the bottom
+.btn-custum{
+    font-family: 'Heebo', sans-serif, 'Yellowtail';
+    font-weight: 300;
+    font-size: 1em;
+}
+    
+
+// footer sticky
+.footer_sticky{
+    position:fixed;
+    bottom:0;
+    right: 0;
+    text-align: right;
+}
+
+
+// image for the central part art
+.container_image{
+    position: initial;
+    grid-area: "area_imagen";
+
+   
+}
+.copy-container{
+    grid-area: "area_copy";
+}
+
+
+.grid_title {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    max-width: 1900px;
+}
+.span-col-2{grid-column: span 2 / auto;}
+
+.span-col-5-lg{grid-column: span 5 / auto;}
+.span-col-3-lg{grid-column: span 3 / auto;}
+.span-col-4{grid-column: span 4 / auto;}
+
+.main_box{
+    margin-top: 10%;
+}
+
+.change_text_copy:hover{
+    color: yellow;
+}
+
+// media for the backvideo
+@media (max-aspect-radio:16/9)
+{
+    .bgVideo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+    .copy_text{
+        font-size: 2.5vw;
+    }
+
+    .LetsGo{
+        font-size: 1vw;
+    }
+    .main_art{
+        width: 30vw;
+        margin: 0;
+        position: relative;
+        right: 4vw;
+        top: -8vw;
+        height: auto;
+        align-items: center;
+    }
+
+    .grid_title {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 10px;
+        max-width: 1900px;
+    }
+    .span-col-2{grid-column: span 2 / auto;}
+    
+    .span-col-5-lg{grid-column: span 5 / auto;}
+    .span-col-3-lg{grid-column: span 3 / auto;}
+    .span-col-4{grid-column: span 4 / auto;}
+
+    .main_box{
+        margin-top: 15%;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 1200px) and (min-width: 990px) {
+    .copy_text{
+        font-size: 4.5vw;
+    }
+  
+
+    .LetsGo{
+        font-size: 1.5vw;
+    }
+
+    .main_art{
+        width: 40vw;
+        margin-top: -6vw;
+        position: relative;
+        height: auto;
+        align-items: center;
+    }
+
+    .grid_title {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 10px;
+        max-width: 1900px;
+    }
+    .span-col-1{grid-column: span 1 / auto;}
+    .span-col-2{grid-column: span 2 / auto;}
+
+    .span-col-6-md{grid-column: span 6 / auto;}
+    .span-col-4-md{grid-column: span 4 / auto;}
+    .span-col-5-md{grid-column: span 5 / auto;}
+ 
+    
+    .main_box{
+        margin-top: 30%;
+    }
+
+}
+
+
+.footer-hover:hover{
+    fill: yellow;
+}
+
+@media only screen and (max-width: 990px) {
+    .main_art{
+        width: 50vw;
+        margin: 0;
+        position: relative;
+        right: 6vw;
+        top: -4vw;
+        height: auto;
+        align-items: center;
+        margin-top: 20vw;
+    }
+
+    .grid_title {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 10px;
+        max-width: 1900px;
+        grid-row-end: auto;
+    }
+    .span-col-1-sm{grid-column: span 1 / auto;}
+    .span-col-5-sm{grid-column: span 5 / auto;}
+    .span-col-8-sm{grid-column: span 8 / auto;}
+    .span-col-0-sm{grid-column: span 0 / auto;}
+    .span-col-12-sm{grid-column: span 12 / auto;}
+    .span-col-12-sm-inverted{grid-column: span 12 / auto; order: -1;}
+    
+    .span-col-10-sm :nth-child(1){
+        order: -1;
+    }
+    
+    .main_box{
+        margin-top: 0%;
+    }
+
+    // .grid-item:nth-last-child(1){
+    //             
+    // }
+    .copy_text{
+        text-align: center;
+    }
+    .mobile_center{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagen_mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .navbar_right_mobile{
+        text-align: right;
+    }
+    
+}
+

@@ -1,6 +1,10 @@
 // importing fonts
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;500;700;900&family=Open+Sans:wght@300;400;600;800&family=Yellowtail&display=swap');
 
+
+@import "animation"
+
+
 // variables
 $text_intro : white;
 
@@ -93,9 +97,7 @@ $text_intro : white;
     margin-top: 10%;
 }
 
-.change_text_copy:hover{
-    color: yellow;
-}
+
 
 // media for the backvideo
 @media (max-aspect-radio:16/9)
@@ -185,9 +187,7 @@ $text_intro : white;
 }
 
 
-.footer-hover:hover{
-    fill: yellow;
-}
+
 
 @media only screen and (max-width: 990px) {
     .main_art{

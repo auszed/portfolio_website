@@ -35,6 +35,11 @@
     line-height: 1;
 }
 
+.animation_text_v2:hover {
+    animation: text-shadow 1.5s ease-in-out infinite;    
+    font-weight: 500;
+    line-height: 1;
+}
 
 
 @keyframes text-shadow {
@@ -50,7 +55,7 @@
 
     20% {  
         fill: #0c2ffb;
-        transform: translateY(0.5em);
+        transform: translateY(0.3em);
         text-shadow: 
             0 0.125em 0 #0c2ffb, 
             0 0.25em 0 #2cfcfd, 
@@ -69,7 +74,7 @@
     
    60% {
         fill: #0c2ffb;
-        transform: translateY(-0.5em);
+        transform: translateY(-0.3em);
         text-shadow: 
             0 0.03125em 0 #0c2ffb, 
             0 0.0625em 0 #2cfcfd, 

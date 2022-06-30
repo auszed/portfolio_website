@@ -2,18 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;500;700;900&family=Open+Sans:wght@300;400;600;800&family=Yellowtail&display=swap');
 
 
-@import "animation"
+@import "animation";
+
+// import boxes scss
+@import "box";
 
 
+
+@import "template";
 // variables
 $text_intro : white;
+
+
 
 .logo_icono{
     max-width:  3em;
 }
 
 
-  #bgVideo{
+#bgVideo{
     position: absolute;
     right: 0;
     bottom: 0;
@@ -109,7 +116,7 @@ $text_intro : white;
 }
 
 
-
+// for desktop screen
 @media only screen and (min-width: 1200px) {
     .copy_text{
         font-size: 2.5vw;
@@ -135,10 +142,11 @@ $text_intro : white;
         max-width: 1900px;
     }
     .span-col-2{grid-column: span 2 / auto;}
-    
+    .span-col-10-lg{grid-column: span 10 / auto;}
     .span-col-5-lg{grid-column: span 5 / auto;}
     .span-col-3-lg{grid-column: span 3 / auto;}
     .span-col-4{grid-column: span 4 / auto;}
+    .span-col-8-lg{grid-column: span 8 / auto;}
 
     .main_box{
         margin-top: 15%;
@@ -147,7 +155,7 @@ $text_intro : white;
 }
 
 
-
+// for tablet screen
 @media only screen and (max-width: 1200px) and (min-width: 990px) {
     .copy_text{
         font-size: 4.5vw;
@@ -172,9 +180,9 @@ $text_intro : white;
         grid-gap: 10px;
         max-width: 1900px;
     }
-    .span-col-1{grid-column: span 1 / auto;}
+    .span-col-1-md{grid-column: span 1 / auto;}
     .span-col-2{grid-column: span 2 / auto;}
-
+    .span-col-10-md{grid-column: span 10 / auto;}
     .span-col-6-md{grid-column: span 6 / auto;}
     .span-col-4-md{grid-column: span 4 / auto;}
     .span-col-5-md{grid-column: span 5 / auto;}
@@ -188,7 +196,7 @@ $text_intro : white;
 
 
 
-
+// for mobile screen
 @media only screen and (max-width: 990px) {
     .main_art{
         width: 50vw;
@@ -211,9 +219,11 @@ $text_intro : white;
     .span-col-1-sm{grid-column: span 1 / auto;}
     .span-col-5-sm{grid-column: span 5 / auto;}
     .span-col-8-sm{grid-column: span 8 / auto;}
-    .span-col-0-sm{grid-column: span 0 / auto;}
+    .span-col-2-sm{grid-column: span 2 / auto;}
     .span-col-12-sm{grid-column: span 12 / auto;}
     .span-col-12-sm-inverted{grid-column: span 12 / auto; order: -1;}
+    .span-col-10-sm{grid-column: span 10 / auto;}
+    .span-col-4-sm{grid-column: span 4 / auto;}
     
     .span-col-10-sm :nth-child(1){
         order: -1;
@@ -245,6 +255,27 @@ $text_intro : white;
     .navbar_right_mobile{
         text-align: right;
     }
+
+
+    .Projects_title{
+        font-size:  3.5vw;
+        letter-spacing: 0.0em;
+        
+        strong{
+            
+            font-size:  5vw;;
+          }
+      }  
     
 }
 
+.grid_projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+
+#mainNav .navbar-toggler{
+    margin-top: 7px; 
+}

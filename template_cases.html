@@ -29,16 +29,15 @@
        <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-            />"
+            />
 
-            <!-- webcompoennts -->
-        <script src="component/header.js"></script>
-        
+            <!-- components loading -->
+        <script src="component/project_box.js"></script>
 
     </head>
     <body id="page-top">
         <!-- Navigation-->   
-        
+            
         <nav class=" navbar-expand-lg  fixed-top" id="mainNav">
             <div class=" grid_title">
                 <div class="span-col-2 span-col-1-md span-col-2-sm"></div>
@@ -66,9 +65,10 @@
         </nav>
 
         <!-- Masthead-->
-        <header >
+        <section >
+
+            <div class="project_box_margin"></div>
              <!-- video background -->
-            
             <div class="video-wrapper">
                     <video id="bgVideo" controls="false" preload="true" autoplay loop muted>
                         <source src="assets\main comp.mp4" type="video/mp4" /> 
@@ -77,74 +77,66 @@
                     </video>
             </div>
 
-            <!-- grid_title 
-            span-col-2
-            span-col-7-lg
-            span-col-3-lg -->
-
-            <!-- span-col-6-md
-            span-col-4-md -->
-            <!-- container text -->
-            <!-- grid-container -->
-
-            
-    
-            <div class="">
-                <!-- grid-item copy-container -->
-                <div class=" grid_title main_box"> 
-                    <div class="span-col-2 span-col-1 span-col-0-sm"></div> 
+            <!-- grid-item copy-container -->
+                <div class=" grid_title project_box_margin"> 
+                    <div class="span-col-2 span-col-1-md span-col-2-sm"></div> 
                     <!-- copy-container -->
-                    
-                    <div class=" span-col-5-lg span-col-6-md span-col-12-sm">
-                        <h1 class="copy_text mx-auto mb-2">Transform your <strong class="change_text_copy animation_text">data</strong>,
-                        </h1>
-                        <h1 class="copy_text mx-auto mb-2">
-                            <strong class="change_text_copy animation_text">into</strong> actionable <strong class="change_text_copy animation_text">insights</strong>
-                        </h1>
-                        <div class="mobile_center">
-                        <a class="btn btn-primary LetsGo change_text_copy animation_text" href="/projects.html">Let's go</a>
-                        </div>
+                    <div class="span-col-3-lg span-col-10-md span-col-8-sm">
+                        <h1 class="Projects_title">
+                            <div class="inside_template_image">
+                                <img src="assets/Starting poin-07.png" alt="" class="main_image_inside_template">
+                            </div>    
+                        </h1>                  
                     </div> 
-                
-                    <!-- container_image -->
-                    <div class=" span-col-3-lg span-col-4-md span-col-12-sm-inverted imagen_mobile">
-                        <div class="container_image">
-                            <img src="assets/watch.svg" class="main_art  animation_text">
-                        </div>
-                    </div>
-                    <div class="span-col-2 span-col-1 span-col-0-sm"></div> 
+                    <div class="span-col-5-lg span-col-10-md span-col-8-sm">
+                        <h1 class="Projects_title">
+                            title of the project <strong class="animation_text_v2">useful insights</strong>    
+                        </h1>                  
+                    </div> 
+                    <div class="span-col-2 span-col-1-md span-col-2-sm"></div> 
                 </div> 
-            </div>
-            <!-- <div class="margin_cover"></div>
-            <div class="container px-4 align-items-left justify-content-left ">
-                <div class="d-flex justify-content-left">
-                    <div>
-                        <h1 class="copy_text mx-auto mb-2">Transform your <strong>data</strong>,
-                        </h1>
-                        <h1 class="copy_text mx-auto mb-2">
-                            <strong>into</strong> actionable <strong>insights</strong>
-                        </h1>
-                        <a class="btn btn-primary btn-custum" href="#about">Get Started</a>
-                    </div> 
-                    <div class="d-flex justify-content-right">
-                        <img src="assets/watch.svg" class="main_art">
+
+                <!-- seccion de los Portfolio -->
+                <div class="project_background_portfolio"></div>
+                <div class="grid_title  ">
+                    
+                    <div class="span-col-2 span-col-1-md span-col-2-sm"></div> 
+                    <div class="span-col-8-lg span-col-10-md span-col-8-sm">
+                        <div class="grid_title">
+                            <div class="span-col-3-lg span-col-6-md span-col-12-sm box_project">
+                                <div class="box_cards">
+                                    <div class="inside_box">
+                                        <img src="assets/Starting poin-07.png" alt="" class="max_size_projects_image">
+                                    </div>
+                                    <div class="title_projects">
+                                        <h3 class="animation_text_v2 h3_projects" >New Algorithm Can Predict Crime in US Cities a Week Before It Happens</h3>
+                                        <p class="p_projects">The algorithm, which was formulated by scientists at the University of Chicago, touts 90% accuracy</p>
+                                        <a class="read_more_link animation_text_v2" href="/contact.html">Read more</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span-col-3-lg">
+                                <Project-box></Project-box>
+                            </div>
+                            <div class="span-col-3-lg">
+                                <Project-box></Project-box>
+                            </div>
+                            <div class="span-col-3-lg">
+                                <Project-box></Project-box>
+                            </div>
+                        </div>
                     </div>
-                </div>       
+                    <div class="span-col-2 span-col-1-md span-col-2-sm"></div> 
                     <!-- </div> -->
-                
-                    <!-- <div class="wrapper_main_text">
-                        <h1 class="copy_text mx-auto mb-2">Transform your <strong>data</strong>,
-                        </h1>
-                        <h1 class="copy_text mx-auto mb-2">
-                            <strong>into</strong> actionable <strong>insights</strong>
-                        <!-- </h1> 
-                       
-                   
-                            
                 </div>
-            </div> -->
-        </header>
-  
+            
+        </section>
+       
+
+       
+
+
        
         <!-- Footer-->
         <footer class="fixed-bottom ">

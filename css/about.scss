@@ -1,0 +1,27 @@
+input{
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        width:100%;
+    }
+
+textarea{
+    height: 4vw;
+}
+
+.about_art{
+    
+    margin: 0;
+    position: relative;
+    right: -4vw;
+    top: -8vw;
+    height: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 20vw;
+    transform: rotateZ(15deg);
+
+}
+

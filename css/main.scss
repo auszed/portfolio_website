@@ -7,6 +7,10 @@
 // import boxes scss
 @import "box";
 
+// about css
+@import "about";
+
+
 
 
 @import "template";
@@ -14,7 +18,11 @@
 $text_intro : white;
 
 
+body{
+    background-color: white;   
+  }
 
+  
 .logo_icono{
     max-width:  3em;
 }
@@ -48,13 +56,8 @@ $text_intro : white;
 }
 
 // copy text from the start
-.copy_text{
-    color: $text_intro;
-    font-family: 'Heebo', sans-serif, 'Yellowtail';
-    font-weight: 300;
-    strong{
-        font-weight: 700;
-    }
+.copy_text {
+    color: white;
 }
 
 
@@ -92,7 +95,7 @@ $text_intro : white;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
-    max-width: 1900px;
+    
 }
 .span-col-2{grid-column: span 2 / auto;}
 
@@ -139,7 +142,6 @@ $text_intro : white;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-gap: 10px;
-        max-width: 1900px;
     }
     .span-col-2{grid-column: span 2 / auto;}
     .span-col-10-lg{grid-column: span 10 / auto;}
@@ -147,7 +149,7 @@ $text_intro : white;
     .span-col-3-lg{grid-column: span 3 / auto;}
     .span-col-4{grid-column: span 4 / auto;}
     .span-col-8-lg{grid-column: span 8 / auto;}
-
+    .span-col-6-lg{grid-column: span 6 / auto;}
     .main_box{
         margin-top: 15%;
     }
@@ -178,7 +180,7 @@ $text_intro : white;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-gap: 10px;
-        max-width: 1900px;
+        
     }
     .span-col-1-md{grid-column: span 1 / auto;}
     .span-col-2{grid-column: span 2 / auto;}
@@ -213,7 +215,7 @@ $text_intro : white;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-gap: 10px;
-        max-width: 1900px;
+        
         grid-row-end: auto;
     }
     .span-col-1-sm{grid-column: span 1 / auto;}
@@ -278,4 +280,10 @@ $text_intro : white;
 
 #mainNav .navbar-toggler{
     margin-top: 7px; 
+}
+
+
+
+.footer-box{
+    background-color: black;
 }

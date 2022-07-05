@@ -92,10 +92,10 @@
 }
 
 .box_project .max_size_projects_image {
-  width: 10vw;
+  width: 25vw;
   height: auto;
   position: absolute;
-  top: -2em;
+  top: -6em;
 }
 
 .box_project .title_projects {
@@ -119,6 +119,10 @@
   width: 100%;
   height: 600px;
   position: absolute;
+}
+
+.template {
+  background-color: white;
 }
 
 .Projects_title {
@@ -148,12 +152,14 @@
   letter-spacing: -0.01em;
   font-weight: 700;
   line-height: 1;
+  font-size: 3.7em;
 }
 
 .p_projects {
   letter-spacing: -0.04em;
   font-weight: 300;
   line-height: 1;
+  font-size: 1.3em;
 }
 
 .read_more_link {
@@ -162,11 +168,46 @@
   color: #1b064d;
   text-decoration: none;
   line-height: 1;
+  font-size: 1.7em;
+}
+
+input {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  width: 100%;
+}
+
+textarea {
+  height: 4vw;
+}
+
+.about_art {
+  margin: 0;
+  position: relative;
+  right: -4vw;
+  top: -8vw;
+  height: auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20vw;
+  -webkit-transform: rotateZ(15deg);
+          transform: rotateZ(15deg);
 }
 
 .inside_template_image {
   width: 4vw;
   position: relative;
+}
+
+.inside_template_image .main_image_inside_template {
+  width: 4vw;
+}
+
+body {
+  background-color: white;
 }
 
 .logo_icono {
@@ -198,12 +239,6 @@
 
 .copy_text {
   color: white;
-  font-family: 'Heebo', sans-serif, 'Yellowtail';
-  font-weight: 300;
-}
-
-.copy_text strong {
-  font-weight: 700;
 }
 
 .btn-custum {
@@ -234,7 +269,6 @@
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
-  max-width: 1900px;
 }
 
 .span-col-2 {
@@ -288,7 +322,6 @@
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
-    max-width: 1900px;
   }
   .span-col-2 {
     grid-column: span 2 / auto;
@@ -307,6 +340,9 @@
   }
   .span-col-8-lg {
     grid-column: span 8 / auto;
+  }
+  .span-col-6-lg {
+    grid-column: span 6 / auto;
   }
   .main_box {
     margin-top: 15%;
@@ -335,7 +371,6 @@
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
-    max-width: 1900px;
   }
   .span-col-1-md {
     grid-column: span 1 / auto;
@@ -379,7 +414,6 @@
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
-    max-width: 1900px;
     grid-row-end: auto;
   }
   .span-col-1-sm {
@@ -465,5 +499,9 @@
 
 #mainNav .navbar-toggler {
   margin-top: 7px;
+}
+
+.footer-box {
+  background-color: black;
 }
 /*# sourceMappingURL=main.css.map */

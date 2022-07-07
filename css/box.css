@@ -90,4 +90,15 @@
   line-height: 1;
   font-size: 1.7em;
 }
+
+.background_template {
+  background-color: white;
+  color: #1b064d;
+}
+
+#backgroadfasdfas {
+  background-color: #FFD166;
+  width: 500px;
+  height: 399px;
+}
 /*# sourceMappingURL=box.css.map */

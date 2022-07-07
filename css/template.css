@@ -8,6 +8,10 @@
 }
 
 .white_text {
+  color: white !important;
+}
+
+h3 {
   color: white;
 }
 /*# sourceMappingURL=template.css.map */
